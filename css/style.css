@@ -12,6 +12,8 @@ body {
 }
 .list {
 	list-style: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 /* header */
 .logo-part-one {
@@ -20,8 +22,17 @@ body {
 
 /* nav section */
 
+/* nav */
+.nav-section {
+	outline: 5px solid red;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
 /* logo */
 .logo {
+	outline: 5px solid red;
 	color: #000000;
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
@@ -29,13 +40,7 @@ body {
 	line-height: 1.19;
 	text-decoration: none;
 }
-/* nav */
-.nav-section {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-}
+
 .nav .link {
 	color: var(--primary-text-color);
 	text-decoration: none;
@@ -46,6 +51,7 @@ body {
 }
 
 /* contacts */
+
 .contacts .link {
 	color: #757575;
 	text-decoration: none;
@@ -59,6 +65,9 @@ body {
 /* hero */
 /* БЕЛЫЙ ЦВЕТ!!! */
 .hero-title {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-family: Roboto;
 	font-weight: 900;
 	font-size: 44px;
@@ -68,6 +77,7 @@ body {
 	text-transform: uppercase;
 }
 .hero-button {
+	display: inline-block;
 	color: var(--accent-color);
 	background-color: var(--text-color-hover);
 	font-weight: 700;
@@ -77,9 +87,16 @@ body {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-decoration: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	padding: 10px 32px;
+	min-width: 200px;
 }
 /* section with features of the company */
 .section-title {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-family: Roboto;
 	font-weight: 700;
 	font-size: 14px;
@@ -87,18 +104,27 @@ body {
 	text-transform: uppercase;
 }
 .section-text {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	color: #757575;
 	font-size: 14px;
 	line-height: 1.71;
 }
 /* company specialization */
 .specialization {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
 }
 .specialization-item {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -114,6 +140,9 @@ body {
 	line-height: 1.9;
 }
 .our-team {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -121,12 +150,18 @@ body {
 }
 
 .section-team .person {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
 	text-align: center;
 }
 .section-item {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-size: 16px;
 	line-height: 1.18;
 	text-align: center;
@@ -137,6 +172,9 @@ body {
 }
 /* customers */
 .customers {
+	outline: 5px solid red;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
