@@ -15,12 +15,23 @@ body {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+html {
+	width: 1600px;
+}
+/* nav section */
+
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* header */
 .logo-part-one {
 	color: var(--text-color-hover);
 }
-
-/* nav section */
 
 /* nav */
 .nav-section {
@@ -32,7 +43,9 @@ body {
 }
 /* logo */
 .logo {
-	outline: 5px solid red;
+	display: inline-block;
+	margin-top: 24px;
+	margin-bottom: 25px;
 	color: #000000;
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
@@ -64,19 +77,29 @@ body {
 
 /* hero */
 /* БЕЛЫЙ ЦВЕТ!!! */
-.hero-title {
+
+.hero {
 	outline: 5px solid red;
+	margin-bottom: 94px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	width: 1600px;
+	text-align: center;
+	background-color: rosybrown;
+}
+
+.hero-title {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-family: Roboto;
+	padding-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
-	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
 .hero-button {
+	padding: 10px 32px;
 	display: inline-block;
 	color: var(--accent-color);
 	background-color: var(--text-color-hover);
@@ -84,19 +107,31 @@ body {
 	font-size: 16px;
 	line-height: 1.9;
 	align-items: center;
-	text-align: center;
 	letter-spacing: 0.06em;
 	text-decoration: none;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
-	padding: 10px 32px;
 	min-width: 200px;
 }
 /* section with features of the company */
+
+.features {
+	margin-bottom: 94px;
+}
+
+.image-features {
+	margin-bottom: 30px;
+	border: solid transparent;
+	width: 270px;
+	height: 120px;
+	background: #f5f4fa;
+	border-radius: 4px;
+}
+
 .section-title {
 	outline: 5px solid red;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	font-family: Roboto;
 	font-weight: 700;
 	font-size: 14px;
@@ -112,10 +147,15 @@ body {
 	line-height: 1.71;
 }
 /* company specialization */
+
+.company-specialization {
+	margin-bottom: 94px;
+}
+
 .specialization {
 	outline: 5px solid red;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -136,13 +176,13 @@ body {
 /* section team */
 .section-team {
 	background-color: #f5f4fa;
-	font-size: 16px;
-	line-height: 1.9;
+	margin-bottom: 94px;
 }
 .our-team {
 	outline: 5px solid red;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 50px;
+	padding-top: 94px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -171,18 +211,36 @@ body {
 	color: var(--text-color-hover);
 }
 /* customers */
+
+.customer-list {
+	margin-bottom: 94px;
+}
+
 .customers {
 	outline: 5px solid red;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
 }
+
 /* footer */
 .footer {
 	background-color: #2f303a;
+}
+
+.logo-down {
+	display: inline-block;
+	padding-top: 45px;
+	margin-bottom: 8px;
+	color: #000000;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	text-decoration: none;
 }
 
 .logo-part-two {
@@ -208,6 +266,8 @@ body {
 	text-transform: uppercase;
 }
 .site-developers > p {
+	margin-top: 0px;
+	margin-bottom: 0px;
 	color: rgba(255, 255, 255, 0.4);
 	font-size: 12px;
 	line-height: 2;
@@ -216,19 +276,66 @@ body {
 
 /* Portfolio */
 
+.nav-portfolio {
+	margin-bottom: 93px;
+	outline: 5px solid red;
+}
+
+.filter-title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.filter {
+	outline: 5px solid red;
+	display: inline-block;
+	margin-bottom: 34px;
+	text-align: center;
+}
+
+.filter-list {
+	display: inline-block;
+	margin-bottom: 94px;
+}
+
 .filter-link {
 	text-decoration: none;
 	color: var(--primary-text-color);
 }
 .button-filter {
+	display: inline-block;
+	padding: 6px 22px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
-	text-align: center;
+	background: #f5f4fa;
+	border-radius: 4px;
 }
 .button-filter:hover,
 .button-filter:focus {
-	color: var(--text-color-hover);
+	background-color: var(--text-color-hover);
+	color: var(--accent-color);
+}
+
+.filter .button-filter.one {
+	min-width: 73px;
+}
+
+.filter .button-filter.two {
+	min-width: 128px;
+}
+.filter .button-filter.three {
+	min-width: 145px;
+}
+.filter .button-filter.four {
+	min-width: 103px;
+}
+.filter .button-filter.five {
+	min-width: 130px;
+}
+
+.filter-list {
 }
 
 .filter-article {
