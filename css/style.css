@@ -11,10 +11,10 @@ body {
 	letter-spacing: 0.03em;
 }
 .list {
-	list-style: none;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px;
+	list-style: none;
 }
 h1,
 h2,
@@ -27,18 +27,16 @@ h3 {
 /* nav section */
 
 .container {
-	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
+
+	width: 1200px;
 	outline: 1px solid red;
 }
 
 /* header */
-.logo-part-one {
-	color: var(--text-color-hover);
-}
 
 /* nav */
 .nav-section {
@@ -48,11 +46,16 @@ h3 {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
+.nav-section {
+	display: flex;
+}
 /* logo */
 .logo {
 	display: inline-block;
-	margin-top: 24px;
-	margin-bottom: 25px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+	margin-right: 85px;
+
 	color: #000000;
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
@@ -61,7 +64,15 @@ h3 {
 	text-decoration: none;
 }
 
+.logo-part-one {
+	color: var(--text-color-hover);
+}
+
 .nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	color: var(--primary-text-color);
 	text-decoration: none;
 }
@@ -70,16 +81,44 @@ h3 {
 	color: var(--text-color-hover);
 }
 
+.nav .nav-items + .nav-items {
+	margin-left: 50px;
+}
+
+.nav {
+	display: flex;
+}
+
 /* contacts */
 
 .contacts .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	color: #757575;
 	text-decoration: none;
+}
+.contacts .link {
+	display: block;
+	align-items: center;
 }
 .contacts .link:hover,
 .contacts .link:focus {
 	color: var(--text-color-hover);
 }
+
+.contacts .contacts-mail {
+	margin-left: 305px;
+}
+.contacts .contacts-number {
+	margin-left: 30px;
+}
+
+.contacts {
+	display: flex;
+}
+
 /* main */
 
 /* hero */
@@ -90,6 +129,7 @@ h3 {
 	margin-bottom: 94px;
 	padding-top: 200px;
 	padding-bottom: 200px;
+
 	text-align: center;
 	background-color: rosybrown;
 }
@@ -98,6 +138,7 @@ h3 {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 30px;
+
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -105,8 +146,9 @@ h3 {
 	text-transform: uppercase;
 }
 .hero-button {
-	padding: 10px 32px;
 	display: inline-block;
+	padding: 10px 32px;
+
 	color: var(--accent-color);
 	background-color: var(--text-color-hover);
 	font-weight: 700;
@@ -166,6 +208,7 @@ h3 {
 .specialization-item {
 	margin-top: 0px;
 	margin-bottom: 0px;
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -182,6 +225,7 @@ h3 {
 .our-team {
 	margin-bottom: 50px;
 	padding-top: 94px;
+
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -190,6 +234,7 @@ h3 {
 
 .section-team .person {
 	margin-bottom: 10px;
+
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
@@ -198,6 +243,7 @@ h3 {
 .section-item {
 	margin-top: 0px;
 	margin-bottom: 0px;
+
 	font-size: 16px;
 	line-height: 1.18;
 	text-align: center;
@@ -215,6 +261,7 @@ h3 {
 .customers {
 	margin-top: 0px;
 	margin-bottom: 50px;
+
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -230,6 +277,7 @@ h3 {
 	display: inline-block;
 	padding-top: 45px;
 	margin-bottom: 8px;
+
 	color: #000000;
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
@@ -263,6 +311,7 @@ h3 {
 .site-developers > p {
 	margin-top: 0px;
 	margin-bottom: 0px;
+
 	color: rgba(255, 255, 255, 0.4);
 	font-size: 12px;
 	line-height: 2;
@@ -298,6 +347,7 @@ h3 {
 .button-filter {
 	display: inline-block;
 	padding: 6px 22px;
+
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
