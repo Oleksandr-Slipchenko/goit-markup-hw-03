@@ -14,10 +14,16 @@ body {
 	list-style: none;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	padding: 0px;
 }
-html {
-	width: 1600px;
+h1,
+h2,
+h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
 }
+
 /* nav section */
 
 .container {
@@ -26,6 +32,7 @@ html {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
+	outline: 1px solid red;
 }
 
 /* header */
@@ -35,7 +42,7 @@ html {
 
 /* nav */
 .nav-section {
-	outline: 5px solid red;
+	outline: 1px solid red;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -79,11 +86,10 @@ html {
 /* БЕЛЫЙ ЦВЕТ!!! */
 
 .hero {
-	outline: 5px solid red;
+	outline: 1px solid red;
 	margin-bottom: 94px;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	width: 1600px;
 	text-align: center;
 	background-color: rosybrown;
 }
@@ -117,6 +123,7 @@ html {
 
 .features {
 	margin-bottom: 94px;
+	outline: 1px solid red;
 }
 
 .image-features {
@@ -129,8 +136,6 @@ html {
 }
 
 .section-title {
-	outline: 5px solid red;
-	margin-top: 0px;
 	margin-bottom: 10px;
 	font-family: Roboto;
 	font-weight: 700;
@@ -139,7 +144,6 @@ html {
 	text-transform: uppercase;
 }
 .section-text {
-	outline: 5px solid red;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	color: #757575;
@@ -153,8 +157,6 @@ html {
 }
 
 .specialization {
-	outline: 5px solid red;
-	margin-top: 0px;
 	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
@@ -162,7 +164,6 @@ html {
 	text-align: center;
 }
 .specialization-item {
-	outline: 5px solid red;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-weight: 700;
@@ -179,8 +180,6 @@ html {
 	margin-bottom: 94px;
 }
 .our-team {
-	outline: 5px solid red;
-	margin-top: 0px;
 	margin-bottom: 50px;
 	padding-top: 94px;
 	font-weight: 700;
@@ -190,16 +189,13 @@ html {
 }
 
 .section-team .person {
-	outline: 5px solid red;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
 	text-align: center;
 }
 .section-item {
-	outline: 5px solid red;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 16px;
@@ -217,7 +213,6 @@ html {
 }
 
 .customers {
-	outline: 5px solid red;
 	margin-top: 0px;
 	margin-bottom: 50px;
 	font-weight: 700;
@@ -278,7 +273,6 @@ html {
 
 .nav-portfolio {
 	margin-bottom: 93px;
-	outline: 5px solid red;
 }
 
 .filter-title {
@@ -288,10 +282,8 @@ html {
 }
 
 .filter {
-	outline: 5px solid red;
 	display: inline-block;
 	margin-bottom: 34px;
-	text-align: center;
 }
 
 .filter-list {
@@ -335,14 +327,12 @@ html {
 	min-width: 130px;
 }
 
-.filter-list {
-}
-
 .filter-article {
 	font-size: 18px;
 	line-height: 1.55;
 }
 .filter-heading {
+	margin-bottom: 4px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
