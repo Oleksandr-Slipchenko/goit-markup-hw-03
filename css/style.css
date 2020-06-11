@@ -46,7 +46,9 @@ h3 {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
-.nav-section {
+.nav-section,
+.nav,
+.contacts {
 	display: flex;
 }
 /* logo */
@@ -87,9 +89,9 @@ h3 {
 	margin-left: 50px;
 }
 
-.nav {
+/* .nav {
 	display: flex;
-}
+} */
 
 /* contacts */
 
@@ -117,9 +119,9 @@ h3 {
 	margin-left: 30px;
 }
 
-.contacts {
+/* .contacts {
 	display: flex;
-}
+} */
 
 /* main */
 
