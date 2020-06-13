@@ -145,7 +145,7 @@ h3 {
 
 .hero-title {
 	margin-top: 0px;
-	margin-bottom: 30profession
+	margin-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -245,7 +245,6 @@ h3 {
 	/* изменить цвет текста */
 }
 
-
 /* the team of company */
 .section-team {
 	background-color: #f5f4fa;
@@ -280,8 +279,7 @@ h3 {
 
 .block-person {
 	padding-top: 30px;
-	background: #FFFFFF;
-
+	background: #ffffff;
 }
 
 .section-team .person {
@@ -340,8 +338,8 @@ h3 {
 }
 
 .customers .item {
-width: calc((100% - 150px) / 6);
-margin-right: 30px;
+	width: calc((100% - 150px) / 6);
+	margin-right: 30px;
 }
 .customers .item:last-child {
 	margin-right: 0px;
@@ -353,7 +351,6 @@ margin-right: 30px;
 .customers .link {
 	vertical-align: bottom;
 }
-
 
 /* footer */
 .footer {
@@ -418,20 +415,20 @@ margin-right: 30px;
 } */
 
 .site-developers > p {
-padding-top: 211px;
-padding-bottom: 21px;
-margin-top: 0px;
-margin-bottom: 0px;
+	padding-top: 211px;
+	padding-bottom: 21px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 
-color: rgba(255, 255, 255, 0.4);
-font-size: 12px;
-line-height: 2;
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 12px;
+	line-height: 2;
 }
 
 /* Portfolio */
 
-.nav-portfolio {
-	margin-bottom: 93px;
+.portfolio-list {
+	padding-top: 93px;
 }
 
 .filter-title {
@@ -441,8 +438,36 @@ line-height: 2;
 }
 
 .filter {
+	display: flex;
+	margin-bottom: 50px;
+}
+.filter .item + .item {
+	margin-left: 8px;
+
+	/* width: calc((100% - 32px) / 5);
+ margin-right: 8px;  - не могу
+ сделать этим способом */
+}
+
+.filter .item:first-child {
+	margin-left: 280px;
+}
+
+.button-filter {
 	display: inline-block;
-	margin-bottom: 34px;
+	padding: 6px 22px;
+
+	min-width: 73px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	background: #f5f4fa;
+	border-radius: 4px;
+}
+.button-filter:hover,
+.button-filter:focus {
+	background-color: var(--text-color-hover);
+	color: var(--accent-color);
 }
 
 .filter-list {
@@ -456,9 +481,9 @@ line-height: 2;
 	width: calc((100% - 60px) / 3);
 	margin-right: 30px;
 	margin-bottom: 30px;
-	background-color: #eeeeee;
-	/* #eeeeee - цвет фона картинки, а
-	не низа	картинки с текстом */
+
+	box-sizing: border-box;
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .filter-list .item:nth-child(3n) {
@@ -490,23 +515,8 @@ line-height: 2;
 	text-decoration: none;
 	color: var(--primary-text-color);
 }
-.button-filter {
-	display: inline-block;
-	padding: 6px 22px;
 
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.62;
-	background: #f5f4fa;
-	border-radius: 4px;
-}
-.button-filter:hover,
-.button-filter:focus {
-	background-color: var(--text-color-hover);
-	color: var(--accent-color);
-}
-
-.filter .button-filter.one {
+/* .filter .button-filter.one {
 	min-width: 73px;
 }
 
@@ -521,13 +531,20 @@ line-height: 2;
 }
 .filter .button-filter.five {
 	min-width: 130px;
-}
+} */
 
 .filter-article {
+	padding: 63px 24px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+
+	color: var(--accent-color);
+	background-color: var(--text-color-hover);
 	font-size: 18px;
 	line-height: 1.55;
 }
 .filter-heading {
+	padding-left: 24px;
 	margin-bottom: 4px;
 	font-weight: 700;
 	font-size: 18px;
@@ -535,7 +552,18 @@ line-height: 2;
 	letter-spacing: 0.06em;
 }
 .filter-caption {
+	padding-left: 24px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 	font-size: 16px;
 	line-height: 1.87;
 	color: #757575;
+}
+.image-filter {
+	margin-bottom: 20px;
+}
+.filter-background {
+	background-color: var(--accent-color);
+	/* padding-top: 20px; */
+	padding-bottom: 20px;
 }
