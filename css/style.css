@@ -140,18 +140,26 @@ h3 {
 
 .hero {
 	outline: 1px solid red;
-	box-sizing: content-box;
-	margin-bottom: 94px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	max-width: 1600px;
+	height: 600px;
 
 	text-align: center;
 	color: var(--accent-color);
-	background-color: rosybrown;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero.jpg);
+	/* background-image: url(../images/Hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; */
 }
 
-.hero .items {
+/* .hero .items {
 	padding-top: 200px;
 	padding-bottom: 200px;
-}
+} */
 
 .hero-title {
 	margin-top: 0px;
@@ -180,9 +188,16 @@ h3 {
 }
 /* section with features of the company */
 
+.features-title {
+	margin: 0;
+	height: 0;
+	color: transparent;
+}
+
 .features {
 	display: flex;
-	margin-bottom: 94px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 	outline: 1px solid red;
 }
 
@@ -223,7 +238,7 @@ h3 {
 
 .specialization {
 	display: flex;
-	margin-bottom: 94px;
+	padding-bottom: 94px;
 }
 
 .specialization .item {
@@ -258,11 +273,10 @@ h3 {
 /* the team of company */
 .section-team {
 	background-color: #f5f4fa;
+	padding-top: 94px;
 	padding-bottom: 94px;
-	margin-bottom: 94px;
 }
 .our-team {
-	padding-top: 94px;
 	margin-bottom: 50px;
 
 	font-weight: 700;
@@ -330,7 +344,8 @@ h3 {
 /* customers */
 
 .customer-list {
-	margin-bottom: 94px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .customers-title {
@@ -438,7 +453,8 @@ h3 {
 /* Portfolio */
 
 .portfolio-list {
-	padding-top: 93px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .filter-title {
@@ -484,7 +500,6 @@ h3 {
 	/* display: inline-block; */
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 94px;
 }
 
 .filter-list .item {
