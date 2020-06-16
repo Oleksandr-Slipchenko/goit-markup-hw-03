@@ -257,16 +257,17 @@ h3 {
 	text-align: center;
 }
 .specialization-text {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	padding-top: 27px;
+	padding-bottom: 27px;
 
+	height: 70px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-align: center;
 	text-transform: uppercase;
-	color: var(--text-color-hover);
-	/* изменить цвет текста */
+	background-color: rgba(47, 48, 58, 0.8);
+	color: var(--accent-color);
 }
 
 /* the team of company */
@@ -382,11 +383,16 @@ h3 {
 }
 .footer-list {
 	display: flex;
+	padding-top: 45px;
+	padding-bottom: 28px;
+	align-items: baseline;
 }
 
+.footer-adrress {
+	padding-right: 69px;
+}
 .logo-down {
 	display: inline-block;
-	padding-top: 45px;
 	margin-bottom: 8px;
 
 	color: #000000;
@@ -401,33 +407,33 @@ h3 {
 	color: var(--accent-color);
 }
 .adrress {
-	margin-bottom: 9px;
-	margin-right: 69px;
+	display: flex;
 	color: var(--accent-color);
 	font-size: 14px;
 	line-height: 1.71;
 	font-style: normal;
-}
-.adrress-contacts .link {
-	color: rgba(255, 255, 255, 0.6);
-	font-size: 14px;
-	line-height: 1.71;
-	text-decoration: none;
-}
-.adrress-contacts .item + .item {
-	margin-top: 9px;
+	flex-direction: column;
 }
 
-.join-in {
-	padding-top: 57px;
+.adrress .item {
+	margin-bottom: 9px;
 }
+.adrress .item:last-child {
+	margin-bottom: 0;
+}
+.adrress .link {
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+
+/* join-in */
+
 .join-in .list {
 	display: flex;
 	margin-top: 20px;
 }
 
 .join-in-item {
-	padding-top: 57px;
 	color: var(--accent-color);
 	font-weight: 700;
 	font-size: 14px;
@@ -438,15 +444,15 @@ h3 {
 	color: var(--accent-color);
 } */
 
-.site-developers > p {
-	padding-top: 211px;
+.footer-copyrights {
+	padding-top: 18px;
 	padding-bottom: 21px;
-	margin-top: 0px;
-	margin-bottom: 0px;
 
+	text-align: center;
 	color: rgba(255, 255, 255, 0.4);
 	font-size: 12px;
 	line-height: 2;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Portfolio */
@@ -570,9 +576,3 @@ h3 {
 	line-height: 1.87;
 	color: #757575;
 }
-
-/* .filter-background {
-	background-color: var(--accent-color);
-	/* padding-top: 20px;
-	padding-bottom: 20px;
-} */
