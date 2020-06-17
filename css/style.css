@@ -23,6 +23,17 @@ body {
 	letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -135,9 +146,11 @@ h3 {
 	margin-left: 30px;
 }
 .image-envelope {
+	display: inline;
 	vertical-align: middle;
 }
 .contacts .number {
+	display: inline;
 	vertical-align: top;
 }
 
@@ -194,12 +207,6 @@ h3 {
 	min-width: 200px;
 }
 /* section with features of the company */
-
-.features-title {
-	margin: 0;
-	height: 0;
-	color: transparent;
-}
 
 .features {
 	display: flex;
@@ -346,9 +353,6 @@ h3 {
 .social-list .social-item:first-child {
 	margin-left: 32px;
 }
-.social-list .link {
-	display: block;
-}
 
 /* customers */
 
@@ -378,9 +382,6 @@ h3 {
 .customers .item:last-child {
 	margin-right: 0px;
 }
-/* .image-customers {
-
-} */
 
 .customers .link {
 	display: block;
@@ -480,12 +481,6 @@ h3 {
 .portfolio-list {
 	padding-top: 94px;
 	padding-bottom: 94px;
-}
-
-.filter-title {
-	margin: 0;
-	height: 0;
-	color: transparent;
 }
 
 .filter {
