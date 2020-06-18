@@ -63,7 +63,6 @@ h3 {
 	margin-right: auto;
 
 	width: 1200px;
-	outline: 1px solid red;
 }
 
 /* header */
@@ -159,7 +158,6 @@ h3 {
 /* hero */
 
 .hero {
-	outline: 1px solid red;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	height: 600px;
@@ -212,7 +210,6 @@ h3 {
 	display: flex;
 	padding-top: 94px;
 	padding-bottom: 94px;
-	outline: 1px solid red;
 }
 
 .features .item {
