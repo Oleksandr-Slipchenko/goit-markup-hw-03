@@ -142,7 +142,6 @@ h3 {
 	color: var(--text-color-hover);
 }
 
-
 .contacts .link:before {
 	content: "";
 	width: 16px;
@@ -158,8 +157,6 @@ h3 {
 	height: 15px;
 	background-image: url(../images/header/phone.svg);
 }
-
-
 
 .contacts .item + .item {
 	margin-left: 30px;
@@ -185,7 +182,6 @@ h3 {
 	background-size: cover;
 	background-position: center; */
 }
-
 
 .hero-title {
 	margin-top: 0px;
@@ -229,13 +225,28 @@ h3 {
 	margin-right: 0;
 }
 
-.image-features {
+.features .item:before {
+	display: block;
 	margin-bottom: 30px;
-	border: solid transparent;
-	width: 270px;
+	content: "";
 	height: 120px;
-	background: #f5f4fa;
+	background-color: #f5f4fa;
 	border-radius: 4px;
+	background-repeat: no-repeat;
+	background-size: 70px;
+	background-position: center;
+}
+.features .icon-antenna:before {
+	background-image: url(../images/features-of-company/antenna.svg);
+}
+.features .icon-clock::before {
+	background-image: url(../images/features-of-company/clock.svg);
+}
+.features .icon-diagram::before {
+	background-image: url(../images/features-of-company/diagram.svg);
+}
+.features .icon-astronaut::before {
+	background-image: url(../images/features-of-company/astronaut.svg);
 }
 
 .section-title {
