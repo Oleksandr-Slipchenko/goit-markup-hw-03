@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 :root {
 	--primary-text-color: #212121;
 	--text-color-hover: #2196f3;
@@ -127,7 +128,7 @@ h3 {
 }
 
 .contacts .link {
-	display: block;
+	display: flex;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	align-items: center;
@@ -141,16 +142,27 @@ h3 {
 	color: var(--text-color-hover);
 }
 
+
+.contacts .link:before {
+	content: "";
+	width: 16px;
+	height: 11px;
+	color: #757575;
+	margin-right: 10px;
+}
+.contacts .mail::before {
+	background-image: url(../images/header/mail.svg);
+}
+.contacts .number::before {
+	width: 10px;
+	height: 15px;
+	background-image: url(../images/header/phone.svg);
+}
+
+
+
 .contacts .item + .item {
 	margin-left: 30px;
-}
-.image-envelope {
-	display: inline;
-	vertical-align: middle;
-}
-.contacts .number {
-	display: inline;
-	vertical-align: top;
 }
 
 /* main */
@@ -174,10 +186,6 @@ h3 {
 	background-position: center; */
 }
 
-/* .hero .items {
-	padding-top: 200px;
-	padding-bottom: 200px;
-} */
 
 .hero-title {
 	margin-top: 0px;
